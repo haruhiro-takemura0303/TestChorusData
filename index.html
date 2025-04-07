@@ -1,34 +1,122 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Audio Player</title>
-    <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden;
-        touch-action: none;
-      }
-      .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        padding: 8px;
-        box-sizing: border-box;
-        font-size: 14px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div>タンバリンのサンプル音</div>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>合唱パート再生ページ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 14px;
+      padding: 16px;
+    }
+    .section {
+      margin-bottom: 32px;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    hr {
+      margin: 8px 0;
+    }
+    .part-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .part-label {
+      width: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <div class="section-title">タイトル1</div>
+    <hr>
+    <div class="part-row">
+      <div class="part-label">Soprano:</div>
       <audio controls>
-        <source src="sound.wav" type="audio/wav" />
-        お使いのブラウザは audio タグに対応していません。
+        <source src="soprano1.wav" type="audio/wav">
       </audio>
     </div>
-  </body>
+    <div class="part-row">
+      <div class="part-label">Alto:</div>
+      <audio controls>
+        <source src="alto1.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="part-row">
+      <div class="part-label">Tenor:</div>
+      <audio controls>
+        <source src="tenor1.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="part-row">
+      <div class="part-label">Bass:</div>
+      <audio controls>
+        <source src="bass1.wav" type="audio/wav">
+      </audio>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">タイトル2</div>
+    <hr>
+    <div class="part-row">
+      <div class="part-label">Soprano:</div>
+      <audio controls>
+        <source src="soprano2.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="part-row">
+      <div class="part-label">Alto:</div>
+      <audio controls>
+        <source src="alto2.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="part-row">
+      <div class="part-label">Tenor:</div>
+      <audio controls>
+        <source src="tenor2.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="part-row">
+      <div class="part-label">Bass:</div>
+      <audio controls>
+        <source src="bass2.wav" type="audio/wav">
+      </audio>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">タイトル3</div>
+    <hr>
+    <div class="part-row">
+      <div class="part-label">Soprano:</div>
+      <audio controls>
+        <source src="soprano3.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="part-row">
+      <div class="part-label">Alto:</div>
+      <audio controls>
+        <source src="alto3.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="part-row">
+      <div class="part-label">Tenor:</div>
+      <audio controls>
+        <source src="tenor3.wav" type="audio/wav">
+      </audio>
+    </div>
+    <div class="part-row">
+      <div class="part-label">Bass:</div>
+      <audio controls>
+        <source src="bass3.wav" type="audio/wav">
+      </audio>
+    </div>
+  </div>
+
+</body>
 </html>
